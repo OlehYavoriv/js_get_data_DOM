@@ -8,7 +8,7 @@ const numbers = [];
 for (let i = 0; i < population.length; i++) {
   const text = population[i].textContent;
 
-  const convertToNumber = Number([text.replace(/,/g, '')]);
+  const convertToNumber = Number(text.replace(/,/g, ''));
 
   numbers.push(convertToNumber);
 }
